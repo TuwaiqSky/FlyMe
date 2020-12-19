@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="TheFirstGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nPd-YN-G3L">
+                                <rect key="frame" x="15" y="59" width="68.5" height="47"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Hk7-qa-9jO">
+                                        <rect key="frame" x="0.0" y="0.0" width="68.5" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wD8-3c-ajf">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Yh-3O-CgB">
+                                                <rect key="frame" x="58.5" y="0.0" width="10" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="avB-ZF-mr4">
+                                        <rect key="frame" x="0.0" y="28.5" width="68.5" height="18.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kXK-7H-fH8">
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xA3-gD-3xe">
+                                                <rect key="frame" x="64" y="0.0" width="4.5" height="18.5"/>
+                                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Neh-a6-HQk">
+                                <rect key="frame" x="338" y="75" width="40" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="-16" minY="-23" maxX="-16" maxY="-23"/>
+                                <state key="normal" title="Button" image="TheBigDimond"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UcA-Zf-55p">
+                                <rect key="frame" x="185" y="772" width="64" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <inset key="contentEdgeInsets" minX="-59" minY="0.0" maxX="-66" maxY="0.0"/>
+                                <state key="normal" title="Button" image="player">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                </state>
+                                <state key="highlighted" image="boycleanFire"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wx1-cj-n7I" appends="YES" id="Snb-Cc-iQm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="urC-q2-EnJ">
+                                <rect key="frame" x="95" y="415" width="225" height="66"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="49"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" systemColor="systemOrangeColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QNN-KK-Kl9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="urC-q2-EnJ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="i3d-jq-fHd"/>
+                            <constraint firstItem="urC-q2-EnJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ueK-CE-ykV"/>
+                            <constraint firstItem="nPd-YN-G3L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="vHs-pg-O7f"/>
+                            <constraint firstItem="nPd-YN-G3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="x1k-4r-7ln"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="5DU-sM-3Ii"/>
+                    <connections>
+                        <outlet property="dimond" destination="Neh-a6-HQk" id="37F-v4-mIw"/>
+                        <outlet property="fireButton" destination="UcA-Zf-55p" id="QPL-M6-SOD"/>
+                        <outlet property="hitCount" destination="9Yh-3O-CgB" id="Q3d-KB-12j"/>
+                        <outlet property="player" destination="UcA-Zf-55p" id="lGv-oa-jzS"/>
+                        <outlet property="playerTap" destination="cUy-Ec-vLA" id="QGR-oZ-2hQ"/>
+                        <outlet property="pointsLabel" destination="wD8-3c-ajf" id="CEv-AZ-Y9N"/>
+                        <outlet property="startingGame" destination="urC-q2-EnJ" id="JTv-vY-OcM"/>
+                        <outlet property="timeCount" destination="xA3-gD-3xe" id="nFy-dO-bjS"/>
+                        <outlet property="timeLabel" destination="kXK-7H-fH8" id="LEf-nL-Bps"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wx1-cj-n7I">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="2wP-9k-wvd"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="cUy-Ec-vLA"/>
+            </objects>
+            <point key="canvasLocation" x="2657.971014492754" y="75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="TheBigDimond" width="162" height="205"/>
+        <image name="boycleanFire" width="227" height="170"/>
+        <image name="player" width="227" height="170"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
